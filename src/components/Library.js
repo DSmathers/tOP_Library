@@ -8,7 +8,10 @@ const Library = () => {
         <div id="library_page">
             <div id="books_grid">
                 <BookCard books={books} />
-            </div>            
+            </div>
+            <div id="library_controls">
+                <button id="add_book_button">Add a Book</button>
+            </div>
         </div>
     )
 }

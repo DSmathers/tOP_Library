@@ -4,10 +4,10 @@ import Library from './components/Library'
 
 function App() {
   return (
-    <>
+    <div id="app_wrapper">
       <Header />
       <Library />
-    </>
+    </div>
   );
 }
 

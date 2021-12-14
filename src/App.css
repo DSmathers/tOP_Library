@@ -1,0 +1,85 @@
+:root {
+  --color-1: #ede9dc;
+  --color-2: #c8cdcd;
+  --color-3: #8f9da5;
+  --color-4: #677485;
+  --color-5: #c3c3c3;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+}
+
+#app_wrapper  {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  margin: 0;
+  padding: .5rem;
+}
+
+#header h1  {
+  margin-top: 0;
+}
+
+#books_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: .5rem;
+  margin: auto;
+  padding: 1rem;
+ 
+}
+
+.book_card  {
+  background-color: var(--color-5);
+  color: var(--color-4);
+  padding: .2rem;
+  width: 15em;
+  height: 12em;
+  line-height: 1.2rem;
+  border-radius: 5%;
+  box-shadow: 0 5px 7px rgba(10 10 10 .2)
+}
+
+#book_card_title  {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: .3rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+#book_card_author {
+  font-size: 1.2rem;
+  text-align: right;
+  margin-right: .5rem;
+  margin-left: .3rem;
+}
+
+#book_card_genre  {
+  font-size: .8rem;
+  text-align: right;
+  margin-right: .3rem;
+}
+
+#library_controls  {
+  width: 100%;
+  display: flex;
+}
+
+#add_book_button  {
+  margin-left: auto;
+  margin-right: 2rem;  
+}
+
+#add_book_modal {
+  display: none;
+}
