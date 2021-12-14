@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary-color-dark: #555555;
+  --primary-color-light: #bababa;
+  --secondary-color: #fbf7f0;
+}
+
+
+.header {
+  margin: 0;
+  border-bottom: 1px solid black;
+  padding-left: 2rem;
+  background-color: var(--secondary-color);
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--primary-color-dark)
+}
+
+#books_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 2.5rem;
+  margin: auto;
+  padding: 1rem;
+
+}
+.book_card  {
+  background-color: var(--primary-color-light);
+}
