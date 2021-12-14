@@ -1,17 +1,23 @@
-import React, {useState} from 'react'
-import Books from './Books'
+import React from 'react'
+import AddBookModal from './AddBookModal'
 import BookCard from './BookCard'
 
 const Library = () => {
-    const [books] = useState(Books)
+    const addNewBook = (e) => {
+        const bookList = JSON.parse(localStorage.getItem('bookList'));
+        console.log(bookList)
+        const newBookForm = document.getElementById('add_book_modal');
+        newBookForm.style.display = 'block'
+    } 
     return (
         <div id="library_page">
             <div id="books_grid">
-                <BookCard books={books} />
+                <BookCard/>
             </div>
             <div id="library_controls">
-                <button id="add_book_button">Add a Book</button>
+                <button id="add_book_button" onClick={addNewBook}>Add a Book</button>
             </div>
+            <AddBookModal />
         </div>
     )
 }
