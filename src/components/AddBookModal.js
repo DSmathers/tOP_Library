@@ -2,6 +2,9 @@ import React from 'react'
 
 const AddBookModal = () => {
     let bookList = JSON.parse(localStorage.getItem('bookList'))
+    if(null === bookList){
+        bookList = []
+    }
     function Book(key, title, author, status){
         this.key = key;
         this.title = title;
@@ -27,10 +30,7 @@ const AddBookModal = () => {
         let bookToAdd = new Book(key, title, author, status);
         updatedList.push(bookToAdd);
         localStorage.setItem('bookList', JSON.stringify(updatedList));
-        
-
-        
-        
+        console.log(updatedList)
     }
     
     return (

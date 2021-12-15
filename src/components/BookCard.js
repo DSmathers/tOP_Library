@@ -2,6 +2,9 @@ import React from 'react'
 
 const BookCard = () => {
     let bookList = JSON.parse(localStorage.getItem("bookList"))
+    if(null === bookList){
+        bookList = []
+    }
 
     const handleDelete = (e) => {
         let tempArr = [];
