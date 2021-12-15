@@ -45,9 +45,8 @@ const AddBookModal = () => {
                     <input type="text" id="new_author"></input>
                     <label>Status: </label>
                     <select id="new_status">
-                        <option value="0">Not Started</option>
-                        <option value="1">Started</option>
-                        <option value="2">Finished</option>
+                        <option value="Unread">Unread</option>
+                        <option value="Read">Read</option>
                     </select>
                     <div id="modalButtons">
                         <button type="submit" className='modalBtn' id="modalSubmit" onClick={handleSubmit}> Submit</button>
