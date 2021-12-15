@@ -20,7 +20,7 @@ const AddBookModal = () => {
         bookList.map((book => {
             return updatedList.push(book);
         }))
-        let key = bookList.length + 1
+        let key = Math.floor(Math.random() * 1000)
         let title =  document.getElementById('new_title').value;
         let author=  document.getElementById('new_author').value;
         let status = document.getElementById('new_status').value;
