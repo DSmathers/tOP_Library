@@ -90,7 +90,7 @@ body  {
 
 .remove_book_btn:hover, .change_status_btn:hover  {
   cursor: pointer;
-  background-color: var(--color-2)
+  background-color: var(--color-2);
 }
 
 #library_controls  {
@@ -153,3 +153,19 @@ body  {
   color: var(--color-1);
   cursor: pointer;
 }
+
+
+@media only screen and (max-device-width:  680px) {
+  #books_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .book_card  {
+    width: 60vw;
+  }
+}
+
